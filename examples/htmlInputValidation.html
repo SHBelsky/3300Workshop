@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML Input Validation</title>
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    </head>
+    <body>
+        <form>
+            <p>
+                <label for="inputRequired">Required Question</label>
+                <input type="text" name="inputRequired" id="inputRequired" required>
+            </p>
+            <p>
+                <label for="inputPattern">Question with Regular Expression (6 or more characters)</label>
+                <input type="text" name="inputPattern" id="inputPattern" pattern=".{6,}">
+            </p>
+            <p>
+                <label for="inputEmail">Email Address</label>
+                <input type="email" name="inputEmail" id="inputEmail">
+            </p>
+            <p>
+                <label for="inputURL">URL</label>
+                <input type="url" name="inputURL" id="inputURL">
+            </p>
+            <p>
+                <label for="inputNum">Number</label>
+                <input type="number" name="inputNum" id="inputNum">
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Submit">
+            </p>
+        </form>
+    </body>
+</html>
