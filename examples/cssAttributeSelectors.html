@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Responsive Design</title>
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    </head>
+    <style type='text/css'>
+        @keyframes ghost {
+            to {
+                height: 311px;
+                width: 415px;
+            }
+            from {
+                height: 500px;
+                width: 650px;
+            }
+        }
+        div {
+            color: red;
+        }
+        div:not(.benson) {
+            color: green;
+        }
+        img[src*="danny"] {
+            animation: ghost;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+    <body>
+        <div id="cssAttribute">
+            <img src="https://vignette2.wikia.nocookie.net/p__/images/d/d6/702766-danny_phantom.jpg/revision/latest?cb=20131205165710&path-prefix=protagonist">
+            <div>Mordechai is cooler than Rigby</div>
+            <div>Rigby is cooler than Mordechai</div>
+            <div class="benson">Benson is not as cool as Mordechai and Rigby</div>
+        </div>
+    </body>
+</html>
