@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Pseudo Classes</title>
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    </head>
+    <style type='text/css'>
+        #cssPseudoClasses:hover {
+            font-weight: bold;
+        }
+        input:disabled + span {
+            color: green;
+        }
+        input:checked + span {
+            color: orange;
+        }
+        #eieio {
+            font-size: 20px;
+        }
+        #eieio span:nth-of-type(odd) {
+            color: blue;
+        }
+        #eieio span:nth-of-type(even) {
+            color: red;
+        }
+        #todo li:first-of-type, #todo li:last-of-type {
+            text-decoration: underline;
+        }
+    </style>
+    <body>
+        <div id="cssPseudoClasses">
+            <a href="../index.html">Home</a><hr>
+            <form>
+                <input type="checkbox" disabled>
+                <span>This input is disabled!</span>
+                
+                <input type="checkbox" checked>
+                <span>This input is preselected!</span>
+            </form>
+            <div id="eieio">
+                Ezra Cornell had a farm...<span>e</span><span>i</span><span>e</span><span>i</span><span>o</span>
+            </div>
+            <ul id="todo">
+                <li>Shovel snow</li>
+                <li>Wait for more snow to fall</li>
+                <li>Shovel snow again</li>
+                <li>Make a snowman out of the snow from bullet point 1</li>
+                <li>Construct a snow fort from the snow from bullet point 3</li>
+                <li>Shovel snow that I didn't shovel while I was busy having fun in bullet points 4 and 5</li>
+            </ul>
+        </div>
+    </body>
+</html>
