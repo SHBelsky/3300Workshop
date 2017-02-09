@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Pseudo Elements</title>
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    </head>
+    <style type='text/css'>
+        .prof::after {
+            content: "Mimno";
+        }
+        .sponge p .sb::before {
+            color: yellow;
+            content: "Spongebob";
+            text-decoration: underline;
+        }
+        .sponge p .sb::after {
+            color: brown;
+            content: " Squarepants";
+            text-decoration: underline;
+        }
+    </style>
+    <body>
+        <div id="cssPseudoElements">
+            <a href="../index.html">Home</a><hr>
+            <span class="prof">Professor David </span>
+            <div class="sponge">
+                <p>
+                    Who lives in a pineapple under the sea?
+                    <span class="sb"></span>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
