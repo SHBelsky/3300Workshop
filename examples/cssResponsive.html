@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Responsive Design</title>
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    </head>
+    <style type='text/css'>
+        #cssResponsive {
+            border: 1px solid black;
+        }
+        #left {
+            border: 1px solid red;
+            height: 50%;
+            width: 50%;
+        }
+        #left-sub {
+            border: 1px solid orange;
+            height: 50%;
+            width: 100%;
+        }
+        #right {
+            border: 1px solid blue;
+            display: none;
+            height: 50%;
+            width: 100%;
+        }
+        #right-sub {
+            border: 1px solid green;
+            height: 100%;
+            width: 50%;
+        }
+        @media screen and (max-width: 600px) {
+            #left {
+                display: none;
+            }
+            #right {
+                display: block;
+            }
+        }
+        
+    </style>
+    <body>
+        <div id="cssResponsive">
+            <div id="left">
+                <a href="../index.html">Home</a> | This column will always be 50% the width of its container
+                <div id="left-sub">
+                    This item will always be 100% the width of its container, and 50% the height of its container
+                </div>
+            </div>
+            <div id="right">
+                 This column only appears when the screen size is 600px or less
+                <div id="right-sub">
+                    This item will always be 50% the width of its container, and 100% the height of its container (notice how it runs over the edge; the container is not bound to the element's boundaries, it simply inherits it)
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

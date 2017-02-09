@@ -2,9 +2,52 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>HTML Input Validation</title>
+        <title>CSS Animations</title>
         <link rel="stylesheet" type="text/css" href="../css/styles.css">
     </head>
+    <style type='text/css'>
+        #cssAnimations #secretBox {
+            animation-name: mySecretBox;
+            animation-duration: 10s;
+            background: url('https://i.imgur.com/ZwcL4ux.jpg');
+            height: 384px;
+            width: 512px;
+        }
+
+        @keyframes mySecretBox {
+            from {
+                margin-left: 0;
+            }
+            to {
+                margin-left: 50%;
+            }
+        }
+
+        #cssAnimations #pusheen {
+            animation-duration: 4s;
+            animation-name: rainbow;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            color: red;
+            font-size: 30px;
+            position: relative;
+            text-align: center;
+        }
+
+        @keyframes rainbow {
+            0% { color: white; top: 0; }
+            10% { color: red; top: 5px; }
+            20% { color: orange; top: 10px; }
+            30% { color: yellow; top: 15px; }
+            40% { color: green; top: 20px; }
+            50% { color: blue; top: 25px; }
+            60% { color: indigo; top: 20px; }
+            70% { color: violet; top: 15px; }
+            80% { color: black; top: 10px; }
+            90% { color: silver; top: 5px; }
+            100% { color: white; top: 0; }
+        }
+    </style>
     <body>
         <a href="../index.html">Home</a>
         <div id="cssAnimations">
